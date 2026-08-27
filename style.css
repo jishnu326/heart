@@ -1050,8 +1050,8 @@ body {
 /* Passport-photo-sized frame */
 .photo-frame {
   display: block;
-  width: 150px;
-  height: 195px;
+  width: 260px;
+  height: 360px;
   padding: 6px;
   margin: 0;
   border: 0;
@@ -1134,15 +1134,23 @@ body {
 }
 
 @media (max-width: 500px) {
-  .photo-frame {
-    width: 280px;
-    height: 360px;
-  }
+    .photo-frame {
+        width: 260px !important;
+        height: 360px !important;
+        max-width: none !important;
+        max-height: none !important;
+    }
 
-  .photo-decoration {
-    font-size: 21px;
-    letter-spacing: 2px;
-  }
+    .photo-frame img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+    }
+
+    .photo-decoration {
+        font-size: 21px;
+        letter-spacing: 2px;
+    }
 }
 
 @media (prefers-reduced-motion: reduce) {
