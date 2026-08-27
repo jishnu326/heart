@@ -1179,3 +1179,27 @@ body {
     visibility: visible !important;
     object-fit: cover !important;
 }
+/* FORCE PHOTO SECTION TO SHOW */
+.photo-page {
+    display: flex !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.photo-frame {
+    display: block !important;
+    width: 260px !important;
+    height: 360px !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+}
+
+.photo-frame img {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    object-fit: cover !important;
+}
